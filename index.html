@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="title">
+        <div id="labelbox">
+          <label class="labelcolor">Pick a Theme</label>
+          <select id="dropdown">
+            <option class="default" value="select">Select</option>
+            <option class="red" value="red">RED</option>
+            <option class="green" value="green">GREEN</option>
+            <option class="blue" value="blue">BLUE</option>
+            <option class="black" value="black">BLACK</option>
+            <option class="white" value="white">WHITE</option>
+          </select>
+        </div>
+        <header>
+          <h1 class="mainTitle">Expense Tracker</h1>
+        </header>
+      </div>
+
+      <div id="inputField">
+        <input id="locationInput" type="text" placeholder="Location" />
+        <input id="amountInput" type="number" placeholder="Amount" />
+        <input id="dateInput" type="date" placeholder="Date" />
+        <button class="button-55" role="button">OK</button>
+      </div>
+
+      <div class="container">
+        <table class="GeneratedTable">
+          <thead class="tableHead">
+            <tr class="tableInputs">
+              <th>Location</th>
+              <th>Amount</th>
+              <th>Date</th>
+              <th class="actions">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="tb">
+            <tr class="newTR">
+              <td>test</td>
+              <td>test</td>
+              <td>test</td>
+              <td class="remove">
+                <button class="button-55" role="button">X</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

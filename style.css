@@ -1,0 +1,104 @@
+table.GeneratedTable {
+  width: 100%;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-width: 0px;
+  border-color: #0d0d0d;
+  border-style: solid;
+  color: #000000;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+}
+
+table.GeneratedTable td,
+table.GeneratedTable th {
+  border-width: 2px;
+  border-color: #0d0d0d;
+  padding: 12px 15px;
+}
+
+table.GeneratedTable thead tr {
+  background-color: rgb(111, 112, 112);
+  color: #050505;
+  text-align: left;
+  font-weight: bold;
+}
+
+table.GeneratedTable .newTR {
+  background-color: #ffffff;
+}
+table.GeneratedTable .newTR:nth-of-type(even) {
+  background-color: #c0c3c3;
+}
+
+table.GeneratedTable .actions {
+  width: 60px;
+}
+
+.mainTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.container {
+  padding: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#inputField {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#labelbox {
+  background-color: rgba(156, 154, 155, 0.527);
+  padding-left: 8px;
+  height: 40px;
+  width: 100px;
+}
+#dropdown {
+  text-align: right;
+}
+
+.button-55 {
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 1px;
+  outline: none;
+  padding: 0.75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-55:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.button-55:focus {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+}
