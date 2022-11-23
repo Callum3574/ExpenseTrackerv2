@@ -55,11 +55,11 @@ def input_from_user():
    
 @app.route('/delete/<id>', methods = ['GET'])
 def delete_record(id):
-    print(id)
+    # print(id)
     if conn != None:
         try:
             cursor = conn.cursor()
-            cursor.execute(f"DELETE FROM money WHERE id = {id}")
+            # cursor.execute(f"DELETE FROM money WHERE id = {id}")
             conn.commit()
         except:
             return 404

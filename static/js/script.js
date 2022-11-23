@@ -29,7 +29,6 @@ function send(e) {
   const location = document.querySelector("#locationInput").value;
   const amount = document.querySelector("#amountInput").value;
   const date = document.querySelector("#dateInput").value;
-
   if (location.length === 0 || amount.length === 0 || date.length === 0) {
     alert("Please input location, amount and date!");
   } else {
@@ -42,7 +41,6 @@ function send(e) {
 
               </td>
     </tr>`;
-    console.log(template);
     document.querySelector("#tb").innerHTML += template;
 
     fetch("/", {
@@ -64,7 +62,7 @@ async function removeItem(e) {
   parseInt(e.target);
   if (e.target.classList.contains("button-55")) {
     const tr = e.target.parentElement.parentElement.rowIndex;
-    inputs.deleteRow(tr);
+    // inputs.deleteRow(tr);
   }
 
   res = await fetch(`http://127.0.0.1:5000/tracker`, {
@@ -73,9 +71,8 @@ async function removeItem(e) {
   });
 
   const json = await res.json();
-  console.log(json[0][0]);
 
-  fetch(`/delete/${json[0][0]}`, {
+  fetch(`/delete/${json[1][0]}`, {
     methods: "DELETE",
   });
 }
@@ -112,5 +109,3 @@ function changeColor(color, text, form) {
   document.querySelector(".labelcolor").style.color = text;
   document.querySelector(".tableHead").style.color = form;
 }
-
-console.log(document);
